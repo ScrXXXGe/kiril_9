@@ -98,7 +98,7 @@ class EulerMethod:
 # Usage example
 async def main():
     def diff_eq(x, y):
-        return (y - 2 * x * y * y) / x
+        return (math.sin(x) - y) * math.cos(x)
 
     euler = EulerMethod(0.25, 1.0, 10.0, 0.1, diff_eq)
 
