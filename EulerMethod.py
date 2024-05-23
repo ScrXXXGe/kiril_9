@@ -100,7 +100,7 @@ async def main():
     def diff_eq(x, y):
         return (math.sin(x) - y) * math.cos(x)
 
-    euler = EulerMethod(0.25, 1.0, 10.0, 0.1, diff_eq)
+    euler = EulerMethod(0, 0, 11.0, 0.5, diff_eq)
 
 
     state = await euler.get_state()
